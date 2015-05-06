@@ -8,6 +8,9 @@
  .Example
    # Takes a screenshot of the primary display
    New-Screenshot
+   
+ .Link
+   GitHub: https://github.com/BWoodson/New-Screenshot
 #>
 function New-Screenshot
 {
