@@ -1,19 +1,21 @@
 # New-Screenshot
 
-## NAME
-    New-Screenshot
+### NAME
+New-Screenshot
 
-## SYNOPSIS
-    Saves a screenshot to a file.
+### Installation
+```
+git clone git@github.com:BWoodson/New-Screenshot $env:USERPROFILE\Documents\WindowsPowershell\Modules\New-Screenshot
+```
 
+### SYNOPSIS
+Saves a screenshot to a file.
 
-## SYNTAX
-    New-Screenshot [<CommonParameters>]
-
+### SYNTAX
+New-Screenshot
 
 ## DESCRIPTION
-    Saves a screenshot to a file.
-
+Saves a screenshot to a file.
 
 ## RELATED LINKS
-    GitHub: https://github.com/BWoodson/New-Screenshot
+GitHub: https://github.com/BWoodson/New-Screenshot
