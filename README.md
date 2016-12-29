@@ -9,9 +9,13 @@ git clone git@github.com:BWoodson/PSScreenshot $env:USERPROFILE\Documents\Window
 ```
 
 ### Examples
+```
 Save-Screenshot
+```
 
+```
 Save-Screenshot -Folder C:\Temp -Delay 30 -Frames 10
+```
 
 ## RELATED LINKS
 GitHub: https://github.com/BWoodson/PSScreenshot
