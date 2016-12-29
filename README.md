@@ -8,6 +8,12 @@ Saves a screenshot to a file.
 git clone git@github.com:BWoodson/PSScreenshot $env:USERPROFILE\Documents\WindowsPowershell\Modules\PSScreenshot
 ```
 
+- Or -
+
+```
+Install-Module -Name PSScreenshot
+```
+
 ### Examples
 ```
 Save-Screenshot
