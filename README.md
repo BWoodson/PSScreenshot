@@ -1,21 +1,17 @@
-# New-Screenshot
+# PSScreenshot
 
-### NAME
-New-Screenshot
+### Description
+Saves a screenshot to a file.
 
 ### Installation
 ```
-git clone git@github.com:BWoodson/New-Screenshot $env:USERPROFILE\Documents\WindowsPowershell\Modules\New-Screenshot
+git clone git@github.com:BWoodson/PSScreenshot $env:USERPROFILE\Documents\WindowsPowershell\Modules\PSScreenshot
 ```
 
-### SYNOPSIS
-Saves a screenshot to a file.
+### Examples
+Save-Screenshot
 
-### SYNTAX
-New-Screenshot
-
-## DESCRIPTION
-Saves a screenshot to a file.
+Save-Screenshot -Folder C:\Temp -Delay 30 -Frames 10
 
 ## RELATED LINKS
-GitHub: https://github.com/BWoodson/New-Screenshot
+GitHub: https://github.com/BWoodson/PSScreenshot
