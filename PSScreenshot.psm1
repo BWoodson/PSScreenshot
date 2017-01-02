@@ -14,7 +14,7 @@
   Save-Screenshot -Folder C:\Temp -Delay 30 -Frames 10
 
   .Link
-GitHub: https://github.com/BWoodson/PSScreenshot
+  GitHub: https://github.com/BWoodson/PSScreenshot
 #>
 function Save-Screenshot
 {
@@ -53,10 +53,18 @@ function Save-Screenshot
 
     # Only handling the primary screen for now
     Add-Type -AssemblyName System.Windows.Forms
-    $primaryScreen = [System.Windows.Forms.Screen]::AllScreens | Where-Object { $_.Primary -eq $true }
+    $primaryScreen = [System.Windows.Forms.Screen]::AllScreens | Where-Object { $_.Primary -eq $TRUE }
+    
+    $display = Get-WmiObject -Class "Win32_VideoController"
 
-    $screenHeight = $primaryScreen.Bounds.Height
-    $screenWidth = $primaryScreen.Bounds.Width
+    #$screenHeight = $primaryScreen.WorkingArea.Height
+    #$screenWidth = $primaryScreen.WorkingArea.Width
+    
+    $screenHeight = $display.CurrentVerticalResolution
+    $screenWidth = $display.CurrentHorizontalResolution
+    
+    #write-error ("h: " + $screenHeight)
+    #write-error ("wah: " + $primaryScreen.workingarea.height)
 
     $bounds = [Drawing.Rectangle]::FromLTRB(0, 0, $screenWidth, $screenHeight)
     $filePath = "$Folder\screenshot-$date.png"
